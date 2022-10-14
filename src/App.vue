@@ -5,7 +5,9 @@ import MainHeader from "./components/shared/MainHeader.vue";
 
 <template>
   <MainHeader />
-  <main><RouterView /></main>
+  <main class="m-auto w-10/12">
+    <RouterView />
+  </main>
 </template>
 
 <style scoped></style>

@@ -1,5 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+//@ts-ignore
+import SwiperBanner from "../components/home/SwiperBanner.vue";
+</script>
 
 <template>
-  <div></div>
+  <SwiperBanner />
 </template>
+
+<style scoped></style>

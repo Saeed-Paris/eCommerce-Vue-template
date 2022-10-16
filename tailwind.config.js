@@ -17,6 +17,7 @@ module.exports = {
       "--c-primary-variant": "#9EE2B0",
       "--c-secondary": "#1D1F22",
       "--c-secondary-variant": "#43464E",
+      "--c-gray-primary": "#72757E",
     },
     extend: {
       gridTemplateRows: {

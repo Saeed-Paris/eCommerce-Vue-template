@@ -11,10 +11,11 @@ import { Pagination, Navigation } from "swiper";
 const modules = [Pagination, Navigation];
 </script>
 <template>
-  <section>
+  <section class="home-banner-slider">
     <swiper
       class="h-full"
       :loop="true"
+      dir="rtl"
       :slides-per-view="1"
       :space-between="0"
       :modules="modules"
@@ -46,8 +47,8 @@ button {
 }
 </style>
 <style>
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.home-banner-slider .swiper-button-prev:after,
+.home-banner-slider .swiper-button-next:after {
   font-size: 30px;
   padding: 10px;
   width: 30px;
@@ -58,6 +59,11 @@ button {
   border-radius: 10px;
   color: #000;
   font-weight: bold;
+}
+.home-banner-slider .swiper-button-disabled {
+  opacity: unset;
+  cursor: pointer;
+  pointer-events: unset;
 }
 
 .swiper-pagination-bullet-active {

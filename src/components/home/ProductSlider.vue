@@ -2,6 +2,8 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 // Import Swiper and modules
 import { Navigation } from "swiper";
+import NavigationBox from "../shared/navigationBox.vue";
+import ProductSlide from "./ProductSlide.vue";
 
 // Now you can use Swiper
 
@@ -10,22 +12,43 @@ const modules = [Navigation];
 </script>
 
 <template>
-  <swiper
-    :navigation="{
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }"
-    :modules="modules"
-    class="mySwiper"
-  >
-    <swiper-slide>Slide 1</swiper-slide><swiper-slide>Slide 2</swiper-slide
-    ><swiper-slide>Slide 3</swiper-slide><swiper-slide>Slide 4</swiper-slide
-    ><swiper-slide>Slide 5</swiper-slide><swiper-slide>Slide 6</swiper-slide
-    ><swiper-slide>Slide 7</swiper-slide><swiper-slide>Slide 8</swiper-slide
-    ><swiper-slide>Slide 9</swiper-slide>
-    <div class="swiper-button-prev">X</div>
-    <div class="swiper-button-next">X</div>
-  </swiper>
+  <section class="home-product-slider relative mt-40">
+    <swiper
+      :rtl="true"
+      :loop="true"
+      :slidesPerView="4"
+      :spaceBetween="20"
+      :navigation="{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }"
+      :modules="modules"
+      class="mySwiper w-11/12 px-6"
+    >
+      <swiper-slide
+        class="flex justify-center"
+        v-for="(product, i) in 10"
+        :key="i"
+      >
+        <ProductSlide :product="product" />
+      </swiper-slide>
+
+      <NavigationBox class="swiper-button-prev" />
+      <NavigationBox isNext class="swiper-button-next" />
+    </swiper>
+  </section>
 </template>
 
-<style scoped></style>
+<style>
+.home-product-slider .swiper-button-prev::after,
+.home-product-slider .swiper-button-next::after {
+  content: unset;
+}
+.home-product-slider .swiper-button-prev {
+}
+
+.home-product-slider .swiper-wrapper,
+.home-product-slider .swiper {
+  position: unset;
+}
+</style>

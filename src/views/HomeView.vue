@@ -9,8 +9,8 @@ import NewsLetter from "../components/home/NewsLetter.vue";
 <template>
   <SwiperBanner />
   <!-- <CategorySection /> -->
-  <!-- <ProductSlider /> -->
   <NewsLetter />
+  <ProductSlider />
 </template>
 
 <style scoped></style>

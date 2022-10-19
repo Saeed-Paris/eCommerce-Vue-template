@@ -5,7 +5,7 @@ import MainFooter from "./components/shared/MainFooter.vue";
 </script>
 
 <template>
-  <MainHeader />
+  <!-- <MainHeader /> -->
   <main class="m-auto w-10/12">
     <RouterView />
   </main>

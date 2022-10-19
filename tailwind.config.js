@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.js",
+  ],
   theme: {
     colors: {
       transparent: "transparent",
@@ -18,6 +22,7 @@ module.exports = {
       "--c-secondary": "#1D1F22",
       "--c-secondary-variant": "#43464E",
       "--c-gray-primary": "#72757E",
+      "--c-dark-variant": "#43464E",
     },
     extend: {
       gridTemplateRows: {
@@ -50,5 +55,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")],
 };

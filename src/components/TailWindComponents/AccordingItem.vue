@@ -4,14 +4,14 @@ const props = defineProps<{
   list: NestedList;
   deep: number;
 }>();
-let qwe = `p-${props.deep}`;
+let nodeMargin = `padding-right:${20 + props.deep * 10}px`;
 </script>
 
 <template>
   <div class="accordion-item bg-white border border-gray-200">
     <h2 class="accordion-header mb-0" :id="`heading-${list.id}`">
       <button
-        :class="qwe"
+        :style="nodeMargin"
         class="accordion-button collapsed relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none"
         type="button"
         data-bs-toggle="collapse"
@@ -19,7 +19,7 @@ let qwe = `p-${props.deep}`;
         aria-expanded="false"
         :aria-controls="`collapse-${list.id}`"
       >
-        {{ list.name }}
+        {{ list.name }} +
       </button>
     </h2>
     <div
@@ -42,4 +42,8 @@ let qwe = `p-${props.deep}`;
   </div>
 </template>
 
-<style scoped></style>
+<style>
+.accordion-button::after {
+  content: none !important;
+}
+</style>

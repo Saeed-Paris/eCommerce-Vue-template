@@ -23,7 +23,7 @@ const modules = [Navigation];
         prevEl: '.swiper-button-prev',
       }"
       :modules="modules"
-      class="mySwiper w-11/12 px-6"
+      class="mySwiper w-17/20vw px-6"
     >
       <swiper-slide
         class="flex justify-center"

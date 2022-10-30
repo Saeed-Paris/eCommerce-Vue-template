@@ -4,7 +4,7 @@ import HeaderSvgGroup from "./HeaderSvgGroup.vue";
 import SearchBar from "./SearchBar.vue";
 </script>
 <template>
-  <header class="flex gap-16 w-10/12 m-auto py-4 inset-x-0">
+  <header class="flex gap-16 w-17/20vw m-auto py-4 inset-x-0">
     <h1><logo-svg /></h1>
     <nav class="flex gap-8 items-center">
       <router-link to="">مجصولات</router-link>

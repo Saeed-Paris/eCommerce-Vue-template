@@ -60,47 +60,47 @@ let nestedList: NestedList[] = [
 let productList: ProductItem[] = [
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
   {
     name: "هودی زنانه کد ۱۲",
-    imageURL: "/src/assets/images/ProductB.png",
+    imageURL: "/src/assets/images/mock-product.jpg",
     price: 129000,
   },
 ];
@@ -108,8 +108,8 @@ let deepLen = ref(0);
 </script>
 
 <template>
-  <section class="flex">
-    <div class="max-w-sm w-3/12">
+  <section class="grid w-17/20vwvw gap-x-5 lg:grid-cols-product-category">
+    <div class="max-w-sm hidden lg:block">
       <div>دسته بندی</div>
       <div>
         <div class="accordion" :id="`accordion${deepLen}`">
@@ -122,7 +122,7 @@ let deepLen = ref(0);
         </div>
       </div>
     </div>
-    <div class="w-9/12">
+    <div class="w-full">
       <div>
         <div>
           <span>فیلنر</span>
@@ -130,10 +130,14 @@ let deepLen = ref(0);
         </div>
         <div>۲۹۳ کالا</div>
       </div>
-      <div class="grid grid-cols-4 gap-12">
-        <div class="" v-for="(product, i) in productList" :key="i">
-          <ProductCard :product="product" />
-        </div>
+      <div
+        class="grid tab:grid-cols-3 mx-auto grid-cols-2 gap-x-4 md:gap-x-8 desktop:max-w-85vw tab:max-w-lg lg:max-w-xlg md:max-w-md"
+      >
+        <ProductCard
+          v-for="(product, i) in productList"
+          :key="i"
+          :product="product"
+        />
       </div>
     </div>
   </section>

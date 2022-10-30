@@ -6,6 +6,18 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
+    maxWidth: {
+      md: "33.75rem",
+      lg: "45rem",
+      xlg: "60rem",
+      "85vw": "85vw",
+    },
+    screens: {
+      md: "36rem", //576
+      tab: "48rem", //768
+      lg: "62rem", //992
+      desktop: "80rem", //1280
+    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -25,6 +37,35 @@ module.exports = {
       "--c-dark-variant": "#43464E",
     },
     extend: {
+      width: {
+        "1/20": "5%",
+        "2/20": "10%",
+        "3/20": "15%",
+        "4/20": "20%",
+        "5/20": "25%",
+        "6/20": "30%",
+        "7/20": "35%",
+        "8/20": "40%",
+        "9/20": "45%",
+        "10/20": "50%",
+        "11/20": "55%",
+        "12/20": "60%",
+        "13/20": "65%",
+        "14/20": "70%",
+        "15/20": "75%",
+        "16/20": "80%",
+        "17/20": "85%",
+        "18/20": "90%",
+        "19/20": "95%",
+
+        "17/20vw": "85vw",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        16: "repeat(16, minmax(0, 1fr))",
+        // Complex site-specific column configuration
+        "product-category": "minmax(0,1fr) minmax(0,3fr);",
+      },
       gridTemplateRows: {
         // Simple 8 row grid
         8: "repeat(8, minmax(0, 1fr))",

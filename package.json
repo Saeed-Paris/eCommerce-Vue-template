@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "pinia": "^2.0.21",
+    "pnpm": "^7.14.2",
     "swiper": "^8.4.4",
     "tw-elements": "1.0.0-alpha12",
     "vue": "^3.2.38",

@@ -7,16 +7,17 @@ module.exports = {
   ],
   theme: {
     maxWidth: {
-      md: "33.75rem",
-      lg: "45rem",
-      xlg: "60rem",
+      md: "540px",
+      lg: "720px",
+      xlg: "960px",
       "85vw": "85vw",
+      max: "1400px"
     },
     screens: {
-      md: "36rem", //576
-      tab: "48rem", //768
-      lg: "62rem", //992
-      desktop: "80rem", //1280
+      md: "576px", //576
+      tab: "768px", //768
+      lg: "992px", //992
+      dsk: "1280px", //1280
     },
     colors: {
       transparent: "transparent",
@@ -29,11 +30,11 @@ module.exports = {
       silver: "#ecebff",
       "bubble-gum": "#ff77e9",
       bermuda: "#78dcca",
-      "--c-primary": "#5ece7b",
+      "--c-primary": "#36b385",
       "--c-primary-variant": "#9EE2B0",
       "--c-secondary": "#1D1F22",
       "--c-secondary-variant": "#43464E",
-      "--c-gray-primary": "#72757E",
+      "--c-gray-primary": "#282A35;",
       "--c-dark-variant": "#43464E",
     },
     extend: {

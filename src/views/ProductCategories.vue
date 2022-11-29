@@ -108,7 +108,7 @@ let deepLen = ref(0);
 </script>
 
 <template>
-  <section class="grid w-17/20vwvw gap-x-5 lg:grid-cols-product-category">
+  <section class="grid w-17/20vwvw gap-x-5 lg:grid-cols-product-category md:max-w-md tab:max-w-lg mx-auto px-4 lg:max-w-xlg dsk:max-w-85vw">
     <div class="max-w-sm hidden lg:block">
       <div>دسته بندی</div>
       <div>
@@ -122,7 +122,7 @@ let deepLen = ref(0);
         </div>
       </div>
     </div>
-    <div class="w-full">
+    <div class="w-full ">
       <div>
         <div>
           <span>فیلنر</span>
@@ -131,7 +131,7 @@ let deepLen = ref(0);
         <div>۲۹۳ کالا</div>
       </div>
       <div
-        class="grid tab:grid-cols-3 mx-auto grid-cols-2 gap-x-4 md:gap-x-8 desktop:max-w-85vw tab:max-w-lg lg:max-w-xlg md:max-w-md"
+        class="grid grid-cols-2 tab:grid-cols-3 tab:gap-x-6 gap-y-2 gap-x-2"
       >
         <ProductCard
           v-for="(product, i) in productList"

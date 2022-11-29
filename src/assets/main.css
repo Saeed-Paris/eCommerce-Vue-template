@@ -13,7 +13,7 @@
   font-family: 'yekan-bakh-bold';
   src: url('@/assets/fonts/Yekan_bakh/Yekan-Bakh-Bold.woff') format('woff');
   font-weight: bold;
-  font-style: normal;
+  font-style: normal; 
 }
 
 @font-face {
@@ -22,9 +22,19 @@
   font-weight: 900;
   font-style: normal;
 }
-*{
+
+.text-bold {
+  font-family: yekan-bakh-bold;
+}
+
+.text-heavy {
+  font-family: yekan-bakh-heavy;
+}
+
+* {
   font-family: yekan-bakh;
 }
+
 /* @import "./base.css"; */
 /* 
 #app {

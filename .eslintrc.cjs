@@ -12,4 +12,5 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
+  "eslint.validate": ["javascript","vue"]
 };

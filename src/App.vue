@@ -6,7 +6,7 @@ import MainFooter from "./components/shared/MainFooter.vue";
 
 <template>
   <!-- <MainHeader /> -->
-  <main class="m-auto w-17/20vw">
+  <main class="m-auto max-w-max">
     <RouterView />
   </main>
   <footer class="-bg--c-dark-variant">
